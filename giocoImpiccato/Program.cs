@@ -3,7 +3,6 @@
 int tentativi = 0, indizi = 0;
 string FilePath = " ";
 string trattino;
-string[] lines = File.ReadAllLines(FilePath); //crasha
 Random rdn = new Random();
 int casuale;
 string parolaCasuale = " ";
@@ -38,13 +37,16 @@ else if (difficolta == "impossibile")
 }
 //selezione lingua e tipologia partita
 Console.WriteLine("seleziona la lingua della tua partita, italiano(ita) o inglese(ing)");
+lingua = Console.ReadLine();
 if (lingua == "ita") //gioco in italiano
 {
     Console.WriteLine("scegli la categoria della tua partita: (v) videogiochi, (a) animali, (p) parti del corpo, (n) natura");
      categoria = Console.ReadLine();
     if (categoria == "v")
     {
+
         FilePath = "videogiochi.txt";
+        string[] lines = File.ReadAllLines(FilePath); 
         StreamReader reader = new StreamReader(FilePath);
         lines = File.ReadAllLines(FilePath);
         casuale = rdn.Next(lines.Length);
@@ -53,6 +55,7 @@ if (lingua == "ita") //gioco in italiano
     else if (categoria == "a")
     {
         FilePath = "animali_italiano.txt";
+        string[] lines = File.ReadAllLines(FilePath);
         StreamReader reader = new StreamReader(FilePath);
         lines = File.ReadAllLines(FilePath);
         casuale = rdn.Next(lines.Length);
@@ -61,6 +64,7 @@ if (lingua == "ita") //gioco in italiano
     else if (categoria == "p")
     {
         FilePath = "parti_del_corpo_italiano.txt";
+        string[] lines = File.ReadAllLines(FilePath);
         StreamReader reader = new StreamReader(FilePath);
         lines = File.ReadAllLines(FilePath);
         casuale = rdn.Next(lines.Length);
@@ -69,6 +73,7 @@ if (lingua == "ita") //gioco in italiano
     else if (categoria == "n")
     {
         FilePath = "natura_italiano.txt";
+        string[] lines = File.ReadAllLines(FilePath);
         StreamReader reader = new StreamReader(FilePath);
         lines = File.ReadAllLines(FilePath);
         casuale = rdn.Next(lines.Length);
@@ -82,6 +87,7 @@ else if (lingua == "ing") //gioco in inglese
     if (categoria == "v")
     {
         FilePath = "videogiochi.txt";
+        string[] lines = File.ReadAllLines(FilePath);
         StreamReader reader = new StreamReader(FilePath);
         lines = File.ReadAllLines(FilePath);
         casuale = rdn.Next(lines.Length);
@@ -90,6 +96,7 @@ else if (lingua == "ing") //gioco in inglese
     else if (categoria == "a")
     {
         FilePath = "animali_inglese.txt";
+        string[] lines = File.ReadAllLines(FilePath);
         StreamReader reader = new StreamReader(FilePath);
         lines = File.ReadAllLines(FilePath);
         casuale = rdn.Next(lines.Length);
@@ -98,6 +105,7 @@ else if (lingua == "ing") //gioco in inglese
     else if (categoria == "p")
     {
         FilePath = "parti_del_corpo_inglese.txt";
+        string[] lines = File.ReadAllLines(FilePath);
         StreamReader reader = new StreamReader(FilePath);
         lines = File.ReadAllLines(FilePath);
         casuale = rdn.Next(lines.Length);
@@ -106,11 +114,37 @@ else if (lingua == "ing") //gioco in inglese
     else if (categoria == "n")
     {
         FilePath = "natura_inglese.txt";
+        string[] lines = File.ReadAllLines(FilePath);
         StreamReader reader = new StreamReader(FilePath);
         lines = File.ReadAllLines(FilePath);
         casuale = rdn.Next(lines.Length);
         parolaCasuale = lines[casuale];
     }
 }
-trattino = new string('_', parolaCasuale.Length);
-Console.WriteLine(trattino);
+trattino = new string('_', parolaCasuale.Length );
+Console.WriteLine(trattino + "(" + parolaCasuale.Length + ")");
+while (tentativi > 0)
+{
+    Console.WriteLine("tentativi rimanenti: " + tentativi);
+    Console.WriteLine();
+    Console.WriteLine("inserisci lettera(l), suggerimento(s), inserisci parola(p)");
+    string scelta=Console.ReadLine();
+    if (scelta == "l")
+    {
+        Console.WriteLine("inserisci la lettera");
+        char inserimento = char.ToLower(Console.ReadKey().KeyChar);
+        for (int i = 0; i<parolaCasuale.Length; i++)
+        {
+            if(inserimento == parolaCasuale[i])
+            {
+                trattino += inserimento;
+            }
+            else
+            {
+                Console.WriteLine("inserimento non corretto");
+                tentativi--;
+            }
+        }
+    }
+
+}
