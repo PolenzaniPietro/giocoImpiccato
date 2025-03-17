@@ -1,15 +1,14 @@
-﻿
-Console.WriteLine("benvenuto giocatore!! stai per giocare al gioco dell'impiccato,\n" +
+﻿Console.WriteLine("benvenuto giocatore!! stai per giocare al gioco dell'impiccato,\n" +
     " spero tu già conosca le regole, in caso contrario... IMPARA LE REGOLE");
 int tentativi = 0, indizi = 0;
 string FilePath = " ";
 string trattino;
-string[] lines = File.ReadAllLines(FilePath);
+string[] lines = File.ReadAllLines(FilePath); //crasha
 Random rdn = new Random();
-int casuale = rdn.Next(lines.Length);
+int casuale;
 string parolaCasuale = " ";
 string lingua = " ";
-
+string categoria= " ";
 //selezione difficolta
 Console.WriteLine("seleziona la difficoltà");
 Console.WriteLine("facile: 10 tentativi, 3 indizi");
@@ -42,12 +41,13 @@ Console.WriteLine("seleziona la lingua della tua partita, italiano(ita) o ingles
 if (lingua == "ita") //gioco in italiano
 {
     Console.WriteLine("scegli la categoria della tua partita: (v) videogiochi, (a) animali, (p) parti del corpo, (n) natura");
-    string categoria = Console.ReadLine();
+     categoria = Console.ReadLine();
     if (categoria == "v")
     {
-        FilePath = "C:\\Users\\polenzani.pietro\\Desktop\\impiccato\\impiccato\\bin\\Debug\\net7.0\\videogiochi.txt";
+        FilePath = "videogiochi.txt";
         StreamReader reader = new StreamReader(FilePath);
         lines = File.ReadAllLines(FilePath);
+        casuale = rdn.Next(lines.Length);
         parolaCasuale = lines[casuale];
     }
     else if (categoria == "a")
@@ -55,6 +55,7 @@ if (lingua == "ita") //gioco in italiano
         FilePath = "animali_italiano.txt";
         StreamReader reader = new StreamReader(FilePath);
         lines = File.ReadAllLines(FilePath);
+        casuale = rdn.Next(lines.Length);
         parolaCasuale = lines[casuale];
     }
     else if (categoria == "p")
@@ -62,6 +63,7 @@ if (lingua == "ita") //gioco in italiano
         FilePath = "parti_del_corpo_italiano.txt";
         StreamReader reader = new StreamReader(FilePath);
         lines = File.ReadAllLines(FilePath);
+        casuale = rdn.Next(lines.Length);
         parolaCasuale = lines[casuale];
     }
     else if (categoria == "n")
@@ -69,17 +71,20 @@ if (lingua == "ita") //gioco in italiano
         FilePath = "natura_italiano.txt";
         StreamReader reader = new StreamReader(FilePath);
         lines = File.ReadAllLines(FilePath);
+        casuale = rdn.Next(lines.Length);
         parolaCasuale = lines[casuale];
     }
 }
 else if (lingua == "ing") //gioco in inglese
 {
     Console.WriteLine("select the category: (v) videogames, (a) animals, (p) body parts, (n) nature");
+    categoria = Console.ReadLine();
     if (categoria == "v")
     {
         FilePath = "videogiochi.txt";
         StreamReader reader = new StreamReader(FilePath);
         lines = File.ReadAllLines(FilePath);
+        casuale = rdn.Next(lines.Length);
         parolaCasuale = lines[casuale];
     }
     else if (categoria == "a")
@@ -87,6 +92,7 @@ else if (lingua == "ing") //gioco in inglese
         FilePath = "animali_inglese.txt";
         StreamReader reader = new StreamReader(FilePath);
         lines = File.ReadAllLines(FilePath);
+        casuale = rdn.Next(lines.Length);
         parolaCasuale = lines[casuale];
     }
     else if (categoria == "p")
@@ -94,6 +100,7 @@ else if (lingua == "ing") //gioco in inglese
         FilePath = "parti_del_corpo_inglese.txt";
         StreamReader reader = new StreamReader(FilePath);
         lines = File.ReadAllLines(FilePath);
+        casuale = rdn.Next(lines.Length);
         parolaCasuale = lines[casuale];
     }
     else if (categoria == "n")
@@ -101,6 +108,7 @@ else if (lingua == "ing") //gioco in inglese
         FilePath = "natura_inglese.txt";
         StreamReader reader = new StreamReader(FilePath);
         lines = File.ReadAllLines(FilePath);
+        casuale = rdn.Next(lines.Length);
         parolaCasuale = lines[casuale];
     }
 }

@@ -1,0 +1,14 @@
+C:\Users\polenzani.pietro\Desktop\giocoImpiccato\giocoImpiccato\obj\Debug\net7.0\giocoImpiccato.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\polenzani.pietro\Desktop\giocoImpiccato\giocoImpiccato\obj\Debug\net7.0\giocoImpiccato.AssemblyInfoInputs.cache
+C:\Users\polenzani.pietro\Desktop\giocoImpiccato\giocoImpiccato\obj\Debug\net7.0\giocoImpiccato.AssemblyInfo.cs
+C:\Users\polenzani.pietro\Desktop\giocoImpiccato\giocoImpiccato\obj\Debug\net7.0\giocoImpiccato.csproj.CoreCompileInputs.cache
+C:\Users\polenzani.pietro\Desktop\giocoImpiccato\giocoImpiccato\bin\Debug\net7.0\giocoImpiccato.exe
+C:\Users\polenzani.pietro\Desktop\giocoImpiccato\giocoImpiccato\bin\Debug\net7.0\giocoImpiccato.deps.json
+C:\Users\polenzani.pietro\Desktop\giocoImpiccato\giocoImpiccato\bin\Debug\net7.0\giocoImpiccato.runtimeconfig.json
+C:\Users\polenzani.pietro\Desktop\giocoImpiccato\giocoImpiccato\bin\Debug\net7.0\giocoImpiccato.dll
+C:\Users\polenzani.pietro\Desktop\giocoImpiccato\giocoImpiccato\bin\Debug\net7.0\giocoImpiccato.pdb
+C:\Users\polenzani.pietro\Desktop\giocoImpiccato\giocoImpiccato\obj\Debug\net7.0\giocoImpiccato.dll
+C:\Users\polenzani.pietro\Desktop\giocoImpiccato\giocoImpiccato\obj\Debug\net7.0\refint\giocoImpiccato.dll
+C:\Users\polenzani.pietro\Desktop\giocoImpiccato\giocoImpiccato\obj\Debug\net7.0\giocoImpiccato.pdb
+C:\Users\polenzani.pietro\Desktop\giocoImpiccato\giocoImpiccato\obj\Debug\net7.0\giocoImpiccato.genruntimeconfig.cache
+C:\Users\polenzani.pietro\Desktop\giocoImpiccato\giocoImpiccato\obj\Debug\net7.0\ref\giocoImpiccato.dll
