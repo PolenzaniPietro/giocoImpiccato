@@ -146,5 +146,23 @@ while (tentativi > 0)
             }
         }
     }
+    else if( scelta == "p") 
+    {
+        Console.WriteLine("prova ad indovinare");
+        string parola=Console.ReadLine();
+        if (parola== parolaCasuale)
+        {
+            Console.WriteLine("HAI VINTO!!!");
+        }
+        else
+        {
+            Console.WriteLine("inserimento sbagliato");
+            tentativi--;
+        }
+    }
+    else if( scelta == "s")
+    { 
+        
+    }
 
 }
