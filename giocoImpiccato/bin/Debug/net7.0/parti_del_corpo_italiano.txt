@@ -5,7 +5,7 @@ orecchio
 naso
 bocca
 lingua
-dentii
+denti
 labbra
 guancia
 collo
@@ -29,7 +29,6 @@ ginocchio
 caviglia
 piede
 alluce
-dito del piede
 muscolo
 fegato
 cuore
@@ -45,6 +44,7 @@ capelli
 sopracciglia
 pelliccia
 unghia
+ciola
 
 
 

@@ -1,50 +1,47 @@
-Super Mario Bros.
-The Legend of Zelda
-Minecraft
-Fortnite
-Call of Duty
-Grand Theft Auto
-The Witcher 3: Wild Hunt
-Red Dead Redemption
-League of Legends
-Assassin's Creed
-Overwatch
-Animal Crossing: New Horizons
-FIFA
-Halo
-World of Warcraft
-The Elder Scrolls V: Skyrim
-Counter-Strike
-Dark Souls
-PUBG
-Tomb Raider
-God of War
-Apex Legends
-Rocket League
-Final Fantasy
-Splatoon
-Horizon Zero Dawn
-Minecraft Dungeons
-Destiny 2
-Spiderman
-Mortal Kombat
-The Sims
-Pokémon
-Call of Duty: Warzone
-Battlefield
-Tomb Raider
-Metro Exodus
-Cyberpunk 2077
-Fortnite: Battle Royale
-Street Fighter
-Dota 2
-Super Smash Bros.
-Left 4 Dead
-The Last of Us
-Borderlands
-Celeste
-Rocket League
-Splinter Cell
-The Division
-Minecraft Story Mode
-Diablo III
+supermariobros
+thelegendofzelda
+minecraft
+fortnite
+callofduty
+grandtheftauto
+reddeadredemption
+leagueoflegends
+assassin'screed
+overwatch
+fifa
+halo
+worldofwarcraft
+skyrim
+counter-strike
+darksouls
+pubg
+tombraider
+godofwar
+apexlegends
+rocketleague
+finalfantasy
+splatoon
+horizonzerodawn
+minecraftdungeons
+destiny2
+spiderman
+mortalkombat
+thesims
+pokemon
+callofdutywarzone
+battlefield
+tombraider
+metroexodus
+cyberpunk2077
+streetfighter
+dota2
+supersmashbros
+left4dead
+thelastofus
+borderlands
+celeste
+rocketleague
+splintercell
+thedivision
+minecraftstorymode
+diabloiii
