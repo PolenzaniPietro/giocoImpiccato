@@ -34,11 +34,13 @@ tombraider
 metroexodus
 cyberpunk2077
 streetfighter
-dota2
+clashroyale
 supersmashbros
 left4dead
 thelastofus
-borderlands
+brawlstars
+clashofclans
+roblox
 celeste
 rocketleague
 splintercell
