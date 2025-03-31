@@ -107,6 +107,7 @@ while (proseguimento==true)
 
     while (tentativi > 0)
     {
+        lettere_inserite = " ";
         Console.WriteLine();
         for (int i = 0; i < trattino.Length; i++)
         {

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("giocoImpiccato")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f9a72ada8b57914ceb54bf036529cd73c782ec9")]
 [assembly: System.Reflection.AssemblyProductAttribute("giocoImpiccato")]
 [assembly: System.Reflection.AssemblyTitleAttribute("giocoImpiccato")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
